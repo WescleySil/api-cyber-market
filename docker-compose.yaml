@@ -6,6 +6,9 @@ services:
     restart: unless-stopped
     container_name: vacation_app
     working_dir: /var/www
+    environment:
+      - APP_ENV=production
+      - APP_DEBUG=false
     volumes:
       - ./:/var/www
     networks:
@@ -16,7 +19,7 @@ services:
     container_name: vacation_nginx
     restart: unless-stopped
     ports:
-      - "80:80"
+      - "8000:8000"
     volumes:
         - ./:/var/www
         - ./docker/nginx/:/etc/nginx/conf.d/

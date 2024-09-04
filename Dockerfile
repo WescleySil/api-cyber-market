@@ -28,4 +28,4 @@ COPY ./docker/php/php.ini /usr/local/etc/php/conf.d/custom.ini
 
 USER $user
 
-EXPOSE 80
+EXPOSE 8000
