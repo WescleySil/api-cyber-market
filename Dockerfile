@@ -27,3 +27,5 @@ WORKDIR /var/www
 COPY ./docker/php/php.ini /usr/local/etc/php/conf.d/custom.ini
 
 USER $user
+
+EXPOSE 80
