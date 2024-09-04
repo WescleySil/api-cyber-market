@@ -1,0 +1,10 @@
+run = "php artisan serve"
+entrypoint = "public/index.php"
+
+[nix]
+channel = "stable-23_11"
+
+[[ports]]
+localPort = 8000
+externalPort = 80
+exposeLocalhost = true
